@@ -1,6 +1,7 @@
 {
   "live": true,
-  "generatedAt": "2026-09-26T05:59:23.898Z",
+  "contactEmail": "desk@onassian.com",
+  "generatedAt": "2026-09-26T15:52:25.625Z",
   "editionDate": "Saturday, 26 September 2026",
   "wire": [
     {
@@ -60,14 +61,6 @@
       "url": "https://www.hellenicshippingnews.com/baltic-dry-index-pulls-back/"
     },
     {
-      "segment": "shipyards",
-      "time": "06:00",
-      "headline": "Next-Generation Subsea Rock Installation Vessels ‘Vindnes’ and ‘Vestnes’ Unveiled",
-      "brief": "Van Oord has revealed the names of two new 35,000-tonne flexible fallpipe vessels, Vindnes and Vestnes, set for delivery in 2028 and…",
-      "source": "Marine Insight",
-      "url": "https://www.marineinsight.com/next-generation-subsea-rock-installation-vessels-vindnes-and-vestnes-unveiled/?utm_source=rss utm_medium=rss utm_campaign=next-generation-subsea-rock-installation-vessels-vindnes-and-vestnes-unveiled"
-    },
-    {
       "segment": "general",
       "time": "06:00",
       "headline": "NYK orders new offshore wind SOV from PaxOcean",
@@ -102,18 +95,26 @@
     {
       "segment": "general",
       "time": "06:00",
-      "headline": "U.S. Navy Establishes New Warfighting Centre For Robotic And Autonomous Systems",
-      "brief": "The US Navy has created a new centre that aims at integration of robotic and autonomous systems into the Navy's operational…",
+      "headline": "India Approves Rs 13 Crore Seafarers’ Welfare Centre At Goa’s Mormugao Port",
+      "brief": "The Indian government has approved Rs 13 crore to set up a Seafarers’ Welfare Centre at the Mormugao Port in…",
       "source": "Marine Insight",
-      "url": "https://www.marineinsight.com/u-s-navy-establishes-new-warfighting-centre-for-robotic-and-autonomous-systems/?utm_source=rss utm_medium=rss utm_campaign=u-s-navy-establishes-new-warfighting-centre-for-robotic-and-autonomous-systems"
+      "url": "https://www.marineinsight.com/india-approves-rs-13-crore-seafarers-welfare-centre-at-goas-mormugao-port/?utm_source=rss utm_medium=rss utm_campaign=india-approves-rs-13-crore-seafarers-welfare-centre-at-goas-mormugao-port"
     },
     {
       "segment": "general",
       "time": "06:00",
-      "headline": "US And Iran Explore Phased Deal To Reopen Strait Of Hormuz And Lift US Blockade Of Iran",
-      "brief": "The United States and Iran are discussing a phased deal that could reopen the Strait of Hormuz and end the US economic blockade of…",
+      "headline": "Russia Says It Struck Cargo Vessels Accused Of Carrying Military Supplies To Ukraine",
+      "brief": "Russia said its forces struck Ukrainian military facilities, cargo ships and port infrastructure during attacks on Thursday, September…",
       "source": "Marine Insight",
-      "url": "https://www.marineinsight.com/us-and-iran-explore-phased-deal-to-reopen-strait-of-hormuz-and-lift-us-blockade-of-iran/?utm_source=rss utm_medium=rss utm_campaign=us-and-iran-explore-phased-deal-to-reopen-strait-of-hormuz-and-lift-us-blockade-of-iran"
+      "url": "https://www.marineinsight.com/russia-says-it-struck-cargo-vessels-accused-of-carrying-military-supplies-to-ukraine/?utm_source=rss utm_medium=rss utm_campaign=russia-says-it-struck-cargo-vessels-accused-of-carrying-military-supplies-to-ukraine"
+    },
+    {
+      "segment": "general",
+      "time": "06:00",
+      "headline": "41 People Dead After Boat Capsizes On Lake Tanganyika In Democratic Republic Of The Congo",
+      "brief": "A boat carrying around 100 people and cargo sank in the Democratic Republic of Congo’s Lake…",
+      "source": "Marine Insight",
+      "url": "https://www.marineinsight.com/41-people-dead-after-boat-capsizes-on-lake-tanganyika-in-democratic-republic-of-the-congo/?utm_source=rss utm_medium=rss utm_campaign=41-people-dead-after-boat-capsizes-on-lake-tanganyika-in-democratic-republic-of-the-congo"
     }
   ],
   "stocks": [
@@ -159,8 +160,8 @@
       "segment": "vlcc",
       "price": 8.92,
       "changePct": 0,
-      "yieldPct": 0,
-      "note": ""
+      "yieldPct": 8.8,
+      "note": "Product tanker scale player"
     },
     {
       "ticker": "FLNG",
