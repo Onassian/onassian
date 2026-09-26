@@ -1,0 +1,44 @@
+name: Daily Edition — 06:00 Singapore
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Compile the edition
+        run: node scripts/fetch-edition.mjs
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_BASE_URL: ${{ vars.AI_BASE_URL }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+      - name: Publish the edition
+        run: cp web/src/data/generated.json web/dist/edition.json
+      - name: Verify built site
+        run: |
+          ls -la web/dist/
+          ls -la web/dist/assets/ | head -10
+      - name: Commit the edition
+        run: |
+          git config user.name "onassian-bot"
+          git config user.email "bot@onassian.com"
+          git add web/src/data/generated.json web/dist/edition.json
+          git diff --staged --quiet || git commit -m "edition: $(TZ=Asia/Singapore date +'%Y-%m-%d %H:%M SGT')"
+          git push
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy web/dist --project-name=${{ vars.CF_PROJECT }}
